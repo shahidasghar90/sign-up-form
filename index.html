@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Sign up Form</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container" id="form">
+            <h1>Sign Up Web Form</h1>
+            <div class="div-container">
+                <label for="">Name</label> <br>
+                <input id="fname" class="name" type="name" placeholder="Full Name" />
+                <div class="error" id="nameErr"></div>
+            </div>
+            <div class="div-container">
+                <label for="">Email Address</label><br>
+                <input id="femail" class="email" type="email" placeholder="abc@gmail.com" />
+                <div class="error" id="emailErr"></div>
+            </div>
+            <div class="div-container">
+                <label for="">Password</label><br>
+                <input id="fpassword"class="password" type="password" placeholder="Minimum 6 Character"/>
+                <div class="error" id="passwordErr"></div>
+                <label for="">Confirm Password</label><br>
+                <input id="cpassword" class="password" type="password" placeholder="Confirm Password"/>
+                <div class="error" id="confPasswordErr"></div>
+            </div>
+            <div class="div-container">
+                <label for="">Mobile</label><br>
+                <input id="fmobile" class="mobile" type="tel" placeholder="+49-157-532-8028" />
+                <div class="error" id="mobileErr"></div>
+            </div>
+            <div>
+                <div class="div-container">
+                    <label for="">Gender</label><br>
+                    <div class="gender-container">
+                        <label for="">Male</label>
+                        <input id="fgender" class="gender" type="radio" name="gender" value="female" />
+                        <label for="">Female</label>
+                        <input id="mgender" class="gender" type="radio" name="gender" value="male"/>
+                    </div>
+                    <div class="error" id="genderErr"></div>
+                </div class="div-container">
+                <div class="div-container">
+                    <label for="">Date of Birth</label><br>
+                    <input id="fdate" type="date" placeholder="" class="dateofbirth" />
+                    <div class="error" id="dateErr"></div>
+                </div>
+            </div>
+            <div class="button-container">
+            <button class="button" id="myBtn" href="#">Sign up!</button>
+            </div>
+        </div>
+        <p id="demo"></p>
+    </body>    
+</html>
